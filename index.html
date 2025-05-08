@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FN90 Digital Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* (CSS from your existing code omitted here for brevity) */
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 2em;">
+        <div>
+            <h1>FN90 Digital Company</h1>
+            <p>Your Reliable Tech Partner for Digital Services</p>
+        </div>
+        <div>
+            <img src="fn90_digital_logo.png" alt="FN90 Logo" style="height: 100px;" width="100" height="100" />
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Expert PC & Software Solutions</h2>
+    <p>We provide fast, reliable and professional technical services tailored for your digital needs.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<section class="container" id="slideshow" style="margin-top: 2em;">
+    <div style="max-width: 1000px; margin: auto;">
+        <div class="slide-show">
+            <img class="slides" src="slide1.gif" width="900" height="300" alt="Slide 1">
+            <img class="slides" src="slide2.gif" width="900" height="400" alt="Slide 2">
+            <img class="slides" src="slide3.gif" width="900" height="400" alt="Slide 3">
+        </div>
+    </div>
+</section>
+
+<section class="container" id="services">
+    <h2 style="text-align: center; margin-bottom: 1em;">Our Services</h2>
+    <div class="services">
+        <div class="service-box"><i class="fas fa-download"></i><h3>Downloading Services</h3></div>
+        <div class="service-box"><i class="fas fa-gamepad"></i><h3>PC Games Installation</h3></div>
+        <div class="service-box"><i class="fas fa-cogs"></i><h3>Software Installation</h3></div>
+        <div class="service-box"><i class="fab fa-windows"></i><h3>Windows Installation</h3></div>
+        <div class="service-box"><i class="fas fa-tools"></i><h3>Computer Repair</h3></div>
+        <div class="service-box"><i class="fas fa-sync-alt"></i><h3>Maintenance & Optimization</h3></div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>Call or message us directly using the options below:</p>
+    <div class="contact-buttons">
+        <a href="tel:+27654906125">📞 Call: 065 490 6125</a>
+        <a href="https://wa.me/255627832270"><img src="whatsapp_icon.jpg" width="20" height="20" alt=""> WhatsApp: 062 783 2270</a>
+        <a href="https://wa.me/255629192270"><img src="whatsapp_icon.jpg" width="20" height="20" alt=""> WhatsApp: 062 919 2270</a>
+    </div>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p style="margin-top: 1em;">&copy; 2025 FN90 Digital Company. All rights reserved.</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+const showSlides = () => {
+    let i;
+    const slides = document.getElementsByClassName("slides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000);
+}
+showSlides();
+</script>
+
+</body>
+</html>
